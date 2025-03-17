@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: testScenarios.DragandDrop
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.349 s <<< FAILURE! - in testScenarios.DragandDrop
+TestScenario2[0: {"browserName":"Chrome","browserVersion":"latest","LT:Options":{"platform":"Windows 10","name":"Playwright HyperExecute Test","build":"Playwright HyperExecute Build","user":"annwesa_basu","username":"annwesa_basu","accessKey":"DxEu7pnp8VtKuv5cMUvH14gizjRE47hJUu9j8wmE0zpKSF1swK","video":true,"visual":true,"network":true,"console":"true","accessibility":true,"tunnel":false}}](testScenarios.DragandDrop)  Time elapsed: 19.349 s  <<< ERROR!
+java.lang.NullPointerException
+	at testScenarios.DragandDrop.TestScenario2(DragandDrop.java:67)
+

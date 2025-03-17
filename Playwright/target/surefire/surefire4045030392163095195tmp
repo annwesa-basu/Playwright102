@@ -1,0 +1,37 @@
+#surefire
+#Sat Mar 15 06:47:59 GMT 2025
+classPathUrl.4=C\:\\Users\\Administrator\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar
+testSuiteDefinitionTestSourceDirectory=C\:\\Users\\Administrator\\Documents\\playwright102\\Playwright\\src\\test\\java
+includes1=**/*Test.java
+classPathUrl.5=C\:\\Users\\Administrator\\.m2\\repository\\com\\microsoft\\playwright\\driver\\1.23.0\\driver-1.23.0.jar
+includes2=**/*TestCase.java
+classPathUrl.6=C\:\\Users\\Administrator\\.m2\\repository\\com\\microsoft\\playwright\\driver-bundle\\1.23.0\\driver-bundle-1.23.0.jar
+classPathUrl.7=C\:\\Users\\Administrator\\.m2\\repository\\junit\\junit\\4.13.2\\junit-4.13.2.jar
+includes0=**/Test*.java
+classPathUrl.8=C\:\\Users\\Administrator\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar
+reportsDirectory=C\:\\Users\\Administrator\\Documents\\playwright102\\Playwright\\target\\surefire-reports
+classPathUrl.9=C\:\\Users\\Administrator\\.m2\\repository\\com\\tngtech\\java\\junit-dataprovider\\1.13.1\\junit-dataprovider-1.13.1.jar
+surefireClassPathUrl.0=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit47\\2.7.1\\surefire-junit47-2.7.1.jar
+classPathUrl.0=C\:\\Users\\Administrator\\Documents\\playwright102\\Playwright\\target\\test-classes
+classPathUrl.1=C\:\\Users\\Administrator\\Documents\\playwright102\\Playwright\\target\\classes
+classPathUrl.2=C\:\\Users\\Administrator\\.m2\\repository\\com\\microsoft\\playwright\\playwright\\1.23.0\\playwright-1.23.0.jar
+classPathUrl.3=C\:\\Users\\Administrator\\.m2\\repository\\com\\google\\code\\gson\\gson\\2.8.9\\gson-2.8.9.jar
+dirscanner.0.params=C\:\\Users\\Administrator\\Documents\\playwright102\\Playwright\\target\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+testClassesDirectory=C\:\\Users\\Administrator\\Documents\\playwright102\\Playwright\\target\\test-classes
+parallel=methods
+useManifestOnlyJar=true
+threadCount=2
+providerConfiguration=org.apache.maven.surefire.junitcore.JUnitCoreProvider
+failIfNoTests=false
+isTrimStackTrace=true
+report.2=org.apache.maven.surefire.report.XMLReporter
+dirscanner.0=directoryScannerOptions
+surefireClassPathUrl.1=C\:\\Users\\Administrator\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\2.0.5\\plexus-utils-2.0.5.jar
+surefireClassPathUrl.2=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.7.1\\surefire-api-2.7.1.jar
+excludes0=**/*$*
+enableAssertions=true
+childDelegation=false
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+useSystemClassLoader=true

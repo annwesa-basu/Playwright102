@@ -1,0 +1,52 @@
+---
+version: 0.1
+globalTimeout: 150
+testSuiteTimeout: 150
+testSuiteStep: 150
+
+runson: win
+
+autosplit: true
+retryOnFailure: true
+
+maxRetries: 1
+concurrency: 3
+
+env:
+# Provide your HyperExecute username and access key
+  LT_USERNAME: "annwesa_basu"
+  LT_ACCESS_KEY: "DxEu7pnp8VtKuv5cMUvH14gizjRE47hJUu9j8wmE0zpKSF1swK"
+# PAT: ${{.secrets.testKey}}
+  TARGET_OS: Windows 10
+
+# Dependency caching for Windows
+cacheKey: '{{ checksum "pom.xml" }}'
+cacheDirectories:
+  - .m2
+
+# shell: bash
+
+pre:
+ - echo "Current Directory:"
+  - cd
+  - dir
+  - npm install playwright@1.49.0 --save-exact
+  - mvn -Dmaven.repo.local=./.m2 -Dmaven.test.skip=true clean install
+  
+post:
+  - cat yaml/win/junit_hyperexecute_autosplit_sample.yaml
+
+mergeArtifacts: true
+
+uploadArtefacts:
+ - name: Surefire-Report
+   path:
+    - target/surefire-reports/**
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: for /f %i in ('findstr /S /M /C:"@Test" src\test\java\*.java') do @echo testScenarios.%~ni
+
+testRunnerCommand:  mvn test -Dtest=$test
+jobLabel: [playwright-Junit, win, autosplit] 
